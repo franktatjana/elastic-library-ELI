@@ -53,7 +53,8 @@ A collection of blogs around OpenAI and ChatGPT. Blogs describe how to build own
 * 23.05.2023 [Introducing Elasticsearch Relevance Engine™ — Advanced search for the AI revolution](https://www.elastic.co/blog/may-2023-launch-announcement), Matt Riley  | [Summary](#introducing-elasticsearch-relevance-engine-advanced-search-for-the-ai-revolution)
 
 
-* 23.05.2023  [Improving information retrieval in the Elastic Stack: Introducing Elastic Learned Sparse Encoder, our new retrieval model](https://www.elastic.co/blog/may-2023-launch-information-retrieval-elasticsearch-ai-model), Thomas Veasey, Quentin Herreros  | [Summary](#introducing-elasticsearch-relevance-engine-advanced-search-for-the-ai-revolution)
+* 23.05.2023  [Improving information retrieval in the Elastic Stack: Introducing Elastic Learned Sparse Encoder, our new retrieval model](https://www.elastic.co/blog/may-2023-launch-information-retrieval-elasticsearch-ai-model), Thomas Veasey, Quentin Herreros  | [Summary](#improving-information-retrieval-in-the-elastic-stack-introducing-elastic-learned-sparse-encoder-our-new-retrieval-model)
+
 
 
 * 31.05.2023  [ChatGPT and Elasticsearch: Faceting, filtering, and more context](https://www.elastic.co/blog/chatgpt-elasticsearch-faceting-filtering-more-context), Luca Wintergerst  | [Summary](#chatgpt-and-elasticsearch-faceting-filtering-and-more-context)
@@ -208,7 +209,6 @@ Plugin can be deployed using a diff cloud provider, the blog describes GCP.
 - test the plugin
 ---
 
-
 ## How to use Elasticsearch to prompt ChatGPT with natural language
 The [blog post](https://www.elastic.co/blog/elasticsearch-prompt-chatgpt-natural-language) describes how ability to generate code can be applied to generate Elasticsearch DSL queries. The goal is to search in Elasticsearch® with sentences like “Give me the first 10 documents of 2017 from the stocks index.”
 
@@ -256,6 +256,52 @@ a simple caching system based on files
 ---
 
 
+---
+
+
+## Privacy-first AI search using LangChain and Elasticsearch
+The [blog post](https://www.elastic.co/blog/privacy-first-ai-search-langchain-elasticsearch)
+
+
+What is LangChain? LangChain is a Python and JavaScript framework for developing applications powered by large language models. LangChain will work with OpenAI’s APIs, but it also excels at abstracting away the differences between databases and AI tools.
+
+
+semantic search to retrieve our private knowledge and then inject that context with a question to our private LLM.
+
+
+**How it works?**
+1. identify data set 
+
+---
+## Accessing machine learning models in Elastic
+The [blog post](https://www.elastic.co/blog/may-2023-launch-machine-learning-models)  discusses Elastic's machine learning capabilities and the options available for applying machine learning in different scenarios. It highlights the ability to leverage built-in models, access third-party PyTorch models, and load self-trained models, particularly focusing on NLP transformers. The article also mentions the scalability of model management across multiple nodes and the use of dedicated nodes for computationally intensive model inference, enabling efficient ingestion, data analysis, and search within Elasticsearch.
+
+
+
+1. Elastic provides support for machine learning (ML) models, allowing you to apply ML appropriate for your use case and level of expertise.
+2. You can leverage built-in models for specific security threats and system issues, use Elastic's proprietary model, access third-party PyTorch models, or load your own trained models.
+3. Elastic's model management is scalable across multiple nodes, ensuring good inference performance for high throughput and low latency workloads.
+4. The Eland library allows you to load ML models into Elasticsearch, particularly those trained using PyTorch.
+5. There are three options for using Eland: command-line, Docker, or within your own Python code.
+6. Kibana's ML Model Management interface enables model management on an Elasticsearch cluster.
+7. Elastic supports transformer models and popular supervised learning libraries.
+8. Generative AI models can be used with Elastic's API for passing queries and processing results.
+9. Detailed steps are provided for loading and using NLP models in Elastic, including specifying identifiers, authentication, and deployment.
+10. Inference can be performed using the deployed model, such as extracting named entities.
+11. Additional resources are available for using models in inference pipelines, tuning deployment, and applying semantic search.
+
+--- 
+
+## Introducing Elasticsearch Relevance Engine™ — Advanced search for the AI revolution
+The [blog post](https://www.elastic.co/blog/may-2023-launch-announcement) discusses
+
+---
+
+## Improving information retrieval in the Elastic Stack: Introducing Elastic Learned Sparse Encoder, our new retrieval model
+The [blog post](https://www.elastic.co/blog/may-2023-launch-information-retrieval-elasticsearch-ai-model) provides a brief overview of the model choice and  aspects of the training process behind the feature for the new text_expansion query and integrating with the new Elasticsearch Relevance Engine. 
+
+
+---
 ## Exploring Applications of ChatGPT to Improve Detection, Response, and Understanding in Security
 The [blog post](https://www.elastic.co/de/security-labs/exploring-applications-of-chatgpt-to-improve-detection-response-and-understanding) explores the applications of ChatGPT in the field of security, specifically focusing on improving detection, response, and understanding of security incidents. It discusses the potential of using ChatGPT to enhance security operations and highlights its benefits in the context of threat detection and incident response.
 
@@ -329,51 +375,16 @@ The [blog post](https://www.elastic.co/de/blog/monitor-openai-api-gpt-models-ope
 In conclusion, the integration of OpenTelemetry and Elastic Stack enables efficient monitoring of OpenAI API GPT models, ensuring performance and reliability. The blog showcases the benefits of using OpenTelemetry for collecting model telemetry data and leveraging Elastic Stack for storing, analyzing, and alerting on the metrics, thereby enhancing the monitoring capabilities of GPT models.
 
 
+
 ---
 
 
-## Privacy-first AI search using LangChain and Elasticsearch
-The [blog post](https://www.elastic.co/blog/privacy-first-ai-search-langchain-elasticsearch)
-
-
-What is LangChain? LangChain is a Python and JavaScript framework for developing applications powered by large language models. LangChain will work with OpenAI’s APIs, but it also excels at abstracting away the differences between databases and AI tools.
-
-
-semantic search to retrieve our private knowledge and then inject that context with a question to our private LLM.
-
-
-**How it works?**
-1. identify data set 
-
-
-
-
-## Accessing machine learning models in Elastic
-The [blog post](https://www.elastic.co/blog/may-2023-launch-machine-learning-models)  discusses Elastic's machine learning capabilities and the options available for applying machine learning in different scenarios. It highlights the ability to leverage built-in models, access third-party PyTorch models, and load self-trained models, particularly focusing on NLP transformers. The article also mentions the scalability of model management across multiple nodes and the use of dedicated nodes for computationally intensive model inference, enabling efficient ingestion, data analysis, and search within Elasticsearch.
-
-
-
-
-
-
-1. Elastic provides support for machine learning (ML) models, allowing you to apply ML appropriate for your use case and level of expertise.
-2. You can leverage built-in models for specific security threats and system issues, use Elastic's proprietary model, access third-party PyTorch models, or load your own trained models.
-3. Elastic's model management is scalable across multiple nodes, ensuring good inference performance for high throughput and low latency workloads.
-4. The Eland library allows you to load ML models into Elasticsearch, particularly those trained using PyTorch.
-5. There are three options for using Eland: command-line, Docker, or within your own Python code.
-6. Kibana's ML Model Management interface enables model management on an Elasticsearch cluster.
-7. Elastic supports transformer models and popular supervised learning libraries.
-8. Generative AI models can be used with Elastic's API for passing queries and processing results.
-9. Detailed steps are provided for loading and using NLP models in Elastic, including specifying identifiers, authentication, and deployment.
-10. Inference can be performed using the deployed model, such as extracting named entities.
-11. Additional resources are available for using models in inference pipelines, tuning deployment, and applying semantic search.
-
-
+---
 ## Unlocking the potential of large language models: Elastic's first code contribution to LangChain
 The [blog post](https://www.elastic.co/blog/large-language-models-elastic-code-langchain)  discusses synergy between LangChain and Elastic to generate embeddings using Elasticsearch models.
 
 
-**LanChain**
+**LangChain**
 A library/framework to integrate with LLMs (LLM agnostic) and combine them with other sources of computation (e.g. the ability to perform complex maths) or knowledge (e.g. real-time inventory) to create applications.
    * provides a standard interface for LLMs and facilitating their integration with other tools
    * makes developing applications that can answer questions over specific documents, power chatbots, and even create decision-making agents
