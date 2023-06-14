@@ -1,0 +1,5 @@
+
+## Improving information retrieval in the Elastic Stack: Introducing Elastic Learned Sparse Encoder, our new retrieval model
+The [blog post](https://www.elastic.co/blog/may-2023-launch-information-retrieval-elasticsearch-ai-model) is about the launch of an information retrieval model for Elasticsearch in May 2023. provides a brief overview of the model choice and  aspects of the training process behind the feature for the new text_expansion query and integrating with the new Elasticsearch Relevance Engine.  
+The article you shared is about the launch of an information retrieval model for Elasticsearch in May 2023. It is designed to improve the search experience by providing more relevant results and better understanding of user intent. The model is based on machine learning and natural language processing techniques. It will be able to understand the context of a query and provide more accurate results. The article also mentions that the model will be available as a plugin for Elasticsearch and will be open source.
+# Improving information retrieval in the Elastic Stack: Introducing Elastic Learned Sparse Encoder, our new retrieval model
