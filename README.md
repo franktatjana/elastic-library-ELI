@@ -1,5 +1,5 @@
 # Elastic Library ELI
-The Elastic Library (ELI) is a curated list of references, information resources, use cases, white papers, blog posts, webinars, customer stories, and other documents related to the Elastic Stack, Elastic Solutions and Platform, Elastic Cloud Enterprise (ECE), Elastic Cloud on Kubernetes (EKS), and Elastic Cloud (ESS). 
+The Elastic Library (ELI) is a curated list of references, information resources, use cases, white papers, blog posts, webinars, customer stories, and other documents related to the Elastic Stack, Elastic Solutions and Platform, Elastic Cloud Enterprise (ECE), Elastic Cloud on Kubernetes (ECK), and Elastic Cloud (ESS). 
 
 **DISCLAIMER This is not an official ELASTIC documentation!**
 
